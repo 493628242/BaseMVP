@@ -17,10 +17,12 @@ import io.reactivex.plugins.RxJavaPlugins;
 
 public class BaseApplication extends Application {
     public static final String APP_ERROR = "ApplicationError";
+    public static Application APP;
 
     @Override
     public void onCreate() {
         super.onCreate();
+        APP = this;
         setRxJavaErrorHandler();
         HashMap<String, String> headers = new HashMap<>();
         headers.put("JOKE", "RentCloud!");

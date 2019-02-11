@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName;
  *         需要根据项目需要进行修改
  */
 
-public abstract class BaseBean {
+public abstract class BaseMVPBean {
     //服务器传来的错误code
     @SerializedName("api_msg")
     private String code;

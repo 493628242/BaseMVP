@@ -2,7 +2,7 @@ package com.gray.basemvp.utils;
 
 import android.widget.Toast;
 
-import com.gray.basemvp.base.BaseApplication;
+import com.gray.basemvp.base.BaseMVPApplication;
 
 /**
  * @author wjy on 2018/10/15/015.
@@ -18,7 +18,7 @@ public class SingleToast {
         if (toast == null) {
             synchronized (SingleToast.class) {
                 if (toast == null) {
-                    toast = new Toast(BaseApplication.APP);
+                    toast = new Toast(BaseMVPApplication.APP);
                 }
             }
         }

@@ -3,11 +3,8 @@ package com.gray.basemvp.utils;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import com.gray.basemvp.base.BaseModel;
-
 import java.io.File;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Set;
 
 import okhttp3.MediaType;

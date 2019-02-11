@@ -15,7 +15,7 @@ import io.reactivex.plugins.RxJavaPlugins;
  * @author wjy on 2018/3/29.
  */
 
-public class BaseApplication extends Application {
+public class BaseMVPApplication extends Application {
     public static final String APP_ERROR = "ApplicationError";
     public static Application APP;
 

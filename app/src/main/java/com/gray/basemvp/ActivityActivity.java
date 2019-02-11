@@ -2,11 +2,11 @@ package com.gray.basemvp;
 
 import android.os.Bundle;
 
-import com.gray.basemvp.base.BaseActivity;
+import com.gray.basemvp.base.BaseMVPActivity;
 import com.gray.basemvp.model.activity.Presenter;
 import com.gray.basemvp.model.activity.View;
 
-public class ActivityActivity extends BaseActivity implements View {
+public class ActivityActivity extends BaseMVPActivity implements View {
 
     Presenter presenter;
 

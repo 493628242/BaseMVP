@@ -1,12 +1,7 @@
 package com.gray.basemvp.base;
 
-import org.reactivestreams.Subscriber;
-
 import java.lang.reflect.ParameterizedType;
-import java.util.ArrayList;
 
-import io.reactivex.Observable;
-import io.reactivex.Observer;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
@@ -14,7 +9,7 @@ import io.reactivex.disposables.Disposable;
  * @author wjy on 2017/9/22.
  */
 
-public abstract class BasePresenter<V extends BaseView, M extends BaseModel> {
+public abstract class BasePresenter<V extends BaseMVPView, M extends BaseMVPModel> {
 
     protected V view;
     protected M model;

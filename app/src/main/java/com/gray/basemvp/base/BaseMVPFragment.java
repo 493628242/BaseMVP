@@ -8,7 +8,7 @@ import com.gray.basemvp.utils.SingleToast;
  * @author wjy on 2018/3/27.
  */
 
-public class BaseFragment extends Fragment implements IClassTAG {
+public class BaseMVPFragment extends Fragment implements IClassTAG {
     public final String TAG = this.getClass().getName();
 
     @Override

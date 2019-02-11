@@ -1,7 +1,7 @@
 package com.gray.basemvp.model.activity;
 
 import com.google.gson.annotations.SerializedName;
-import com.gray.basemvp.base.BaseBean;
+import com.gray.basemvp.base.BaseMVPBean;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import java.util.List;
  * @author wjy on 2018/3/30.
  */
 
-public class Bean extends BaseBean {
+public class Bean extends BaseMVPBean {
 
     /**
      * data : [{"id":"1","cover_pic":"http://rentcloudtest.image.alimmdn.com/2/15142681609797.jpg","title":"这是云租的第一个故事","introduction":"云租故事测试-102093","city":"温州","created_at":"2017-12-26","url":"http://xx222.sss.ss","saw":"0"}]

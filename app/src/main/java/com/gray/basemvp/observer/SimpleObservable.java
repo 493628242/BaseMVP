@@ -1,7 +1,7 @@
 package com.gray.basemvp.observer;
 
 import com.gray.basemvp.base.BasePresenter;
-import com.gray.basemvp.base.BaseView;
+import com.gray.basemvp.base.BaseMVPView;
 import com.gray.basemvp.base.IClassTAG;
 import com.gray.basemvp.error.ErrorManager;
 import com.gray.basemvp.error.NetResponseException;
@@ -19,11 +19,11 @@ import io.reactivex.disposables.Disposable;
 
 public abstract class SimpleObservable<T> implements Observer<T> {
 
-    private SoftReference<BaseView> softView;
+    private SoftReference<BaseMVPView> softView;
     private SoftReference<BasePresenter> softPresenter;
     private Disposable disposable;
 
-    public SimpleObservable(BaseView view, BasePresenter presenter) {
+    public SimpleObservable(BaseMVPView view, BasePresenter presenter) {
         softView = new SoftReference<>(view);
         softPresenter = new SoftReference<>(presenter);
     }

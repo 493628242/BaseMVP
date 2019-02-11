@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.gray.basemvp.base.BaseActivity;
+import com.gray.basemvp.base.BaseMVPActivity;
 import com.gray.basemvp.model.activity.Presenter;
 import com.gray.basemvp.model.activity.View;
 import com.gray.basemvp.utils.LogUtils;
 
-public class MainActivity extends BaseActivity implements View {
+public class MainActivity extends BaseMVPActivity implements View {
     private Presenter presenter;
     TextView id;
 
